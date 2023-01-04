@@ -189,7 +189,6 @@ body {
 }
 
 .hero-title {
-  font-weight: inherit;
   font-size: 56px;
   line-height: 1.07;
   color: var(--primary-white-color);
@@ -245,22 +244,6 @@ body {
   overflow: hidden;
 }
 
-.feature-icon-list {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 8px;
-}
-
-.feature-icon-item {
-  display: flex;
-  width: calc((100% - 72px) / 4);
-  height: 112px;
-  background: var(--second-background-color);
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-}
-
 .feature-list {
   display: flex;
   gap: 24px;
@@ -269,6 +252,14 @@ body {
 .feature-list-item {
   display: block;
   width: calc((100% - 72px) / 4);
+}
+
+.feature-icon-item {
+  height: 112px;
+  background: var(--second-background-color);
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .feature-title {
@@ -289,7 +280,6 @@ body {
 
 .service-title {
   font-size: 36px;
-  font-weight: inherit;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
@@ -316,7 +306,6 @@ body {
 }
 
 .team-title {
-  font-weight: inherit;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -343,6 +332,7 @@ body {
 }
 
 .team-item-title {
+  font-weight: inherit;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -389,7 +379,6 @@ body {
 }
 
 .client-title {
-  font-weight: inherit;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -457,7 +446,7 @@ body {
   color: var(--accent-color);
   background-color: var(--second-background-color);
   padding: 12px 24px;
-  border: 1px solid var(--border-color);
+  border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -480,6 +469,7 @@ body {
 .portfolio-project-item {
   background-color: var(--primary-white-color);
   width: calc((100% - 48px) / 3);
+  cursor: pointer;
 }
 
 .portfolio-project-item:hover {
@@ -495,6 +485,7 @@ body {
 }
 
 .portfolio-project-title {
+  font-weight: inherit;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 8px;
@@ -551,6 +542,7 @@ body {
 
 .soc-media-title {
   display: block;
+  font-weight: inherit;
   line-height: 1.5;
   color: var(--primary-white-color);
   margin-bottom: 16px;
